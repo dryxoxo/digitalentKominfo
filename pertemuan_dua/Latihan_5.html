@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<form>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <th colspan="4">Pendaftaran Member</th>
+        </thead>
+        <tbody>
+        <tr>
+                <td><label for="nama">Nama :</label></td>
+                <td><input type="text" id="nama"></td>
+                <input type="hidden" id="custId" name="custId" value="3487">
+        </tr>
+        <tr>
+            <td><label for="password">Password :</label></td>
+            <td><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin :</td>
+            <td>
+                <input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+                <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">wanita</label>
+            </td>
+        </tr>
+        <tr>
+            <td> Hobi : </td>
+            <td>
+                <input type="checkbox" id="Hobi1" name="Hobi1" value="Membaca">
+                <label for="Hobi1">Membaca</label><br>
+                <input type="checkbox" id="Hobi2" name="Hobi2" value="Futsal">
+                <label for="Hobi2"> Futsal</label>
+                <input type="checkbox" id="Hobi3" name="Hobi3" value="Lainnya">
+                <label for="Hobi3">Lainnya</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="myfile">Foto</label>
+            </td>
+            <td>
+                <input type="file" id="myfile" name="myfile">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="reset" value="Hapus">
+                <button type="submit">Kirim</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
