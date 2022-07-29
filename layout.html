@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Machine Learning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/34159d944b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            Analisis Pelanggan Supermarket
+          </a>
+        </div>
+    </nav>
+        <div class="d-flex flex-shrink align-items-start mt-5 pt-3 ps-2">
+            <div class="nav flex-column nav-pills col-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active text-start" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-house-chimney pe-3"></i>Utama</button>
+              <button class="nav-link text-start" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa-solid fa-table-list pe-3"></i>Database</button>
+              <button class="nav-link text-start" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fa-solid fa-circle-info pe-3"></i>Tentang</button>
+            </div>
+            <div class="tab-content container-fluid" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="container text-center">
+                    <h1>Analisa Pelanggan</h1>
+                    <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Upload KTP-mu Di Sini</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Upload KTP</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">KTPmu tidak akan disimpan</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                    <button type="button" class="btn btn-primary">Upload</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mt-5">
+                    <form>
+                        <div class="row mb-3">
+                          <label for="nik" class="col-sm-2 col-form-label">NIK</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nik">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="nama">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="agama" class="col-sm-2 col-form-label">Agama</label>
+                            <div class="col-sm-10">
+                                <select class="form-select" aria-label="Default select example" id="agama">
+                                    <option selected>Pilih Agama</option>
+                                    <option value="islam">Islam</option>
+                                    <option value="kristen">Kristen</option>
+                                    <option value="protestan">Protestan</option>
+                                    <option value="budha">Budha</option>
+                                    <option value="hindu">Hindu</option>
+                                    <option value="konghucu">Konghucu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="date" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="date"/>
+                            </div>
+                        </div>
+                        <fieldset class="row mb-3">
+                          <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                First radio
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                              <label class="form-check-label" for="gridRadios2">
+                                Second radio
+                              </label>
+                            </div>
+                            <div class="form-check disabled">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                              <label class="form-check-label" for="gridRadios3">
+                                Third disabled radio
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                        <div class="row mb-3">
+                          <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck1">
+                              <label class="form-check-label" for="gridCheck1">
+                                Example checkbox
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
