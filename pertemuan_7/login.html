@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Digitalent Kominfo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container-fluid py-5" style="background-color: #0000ff ;">
+      <div class="container">
+          <div class="row">
+              <h1 class="text-center" style="color: white;">Tugas 6</h1>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-3">
+      <div class="container">
+        <div class="row justify-content-center align-self-center">
+          <div class="col col-md-5 col-sm8">
+            <div class="card mx-auto" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">Silahkan Login</h5>
+                <form class="needs-validation">
+                  <div class="form-floating mb-3 has-validation">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+                  <label for="inputEmail" required>Email</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+                <div class="col pt-3">
+                  <button class="btn btn-primary col-12" onclick="Login()">Login</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function Login() {
+            var done = 0;
+            var username = document.getElementById("inputEmail").value;
+            username = username.toLowerCase();
+            var password = document.getElementById("inputPassword").value;
+            password = password.toLowerCase();
+            if (username == "test@gmail.com" && password == "hadeh") {
+                window.open("menu.html")
+            } else
+                if (done == 0) {
+                    alert("Username/Password yang anda masukan salah!");
+                }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
